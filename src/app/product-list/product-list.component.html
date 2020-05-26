@@ -1,8 +1,13 @@
 <h2>Products</h2>
-<!-- *ngFor repeats for each product in the list -->
-<div *ngFor="let product of products">
-</div>
 
+<div *ngFor="let product of products">
+
+  <h3>
+    <!-- To display the names of the products, use the interpolation syntax {{ }}  -->
+      {{ product.name }}
+  </h3>
+
+</div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
