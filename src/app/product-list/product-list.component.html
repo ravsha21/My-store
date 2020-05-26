@@ -8,11 +8,11 @@
       {{ product.name }}
     </a>
   </h3>
-
+  <!-- show description of product -->
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
-
+<!-- add a product share button -->
   <button (click)="share()">
     Share
   </button>
