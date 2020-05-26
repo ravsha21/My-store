@@ -8,12 +8,8 @@ import { Output, EventEmitter } from '@angular/core';
   templateUrl: './product-alerts.component.html',
   styleUrls: ['./product-alerts.component.css']
 })
-export class ProductAlertsComponent implements OnInit {
-  /*  @Input() decorator indicates that the property value passes in from the component's parent  */
+/* emit an event when the value of the notify property changes.  */
+export class ProductAlertsComponent {
   @Input() product;
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  @Output() notify = new EventEmitter();
 }
