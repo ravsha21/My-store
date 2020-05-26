@@ -14,8 +14,12 @@
   </p>
 <!-- add a product share button -->
   <button (click)="share()">
-    Share
-  </button>
+  Share
+</button>
+<!-- add alert for product -->
+<app-product-alerts
+  [product]="product">
+</app-product-alerts>
 
 </div>
 
